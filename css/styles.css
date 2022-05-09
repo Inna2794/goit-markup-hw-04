@@ -104,12 +104,6 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-.header-contact-link-email {
-  display: inline-block;
-  background-repeat: no-repeat;
-}
-
 .header-contact-link.email:hover,
 .header-contact-link.email:focus {
   color: #2196f3;
@@ -120,14 +114,13 @@ body {
   color: #2196f3;
 }
 
-.header-contact-link-phone {
-  display: inline-block;
-  background-repeat: no-repeat;
-}
-
 .header-contact-link {
   display: flex;
 }
+.header-contacts:hover {
+  fill: #757575;
+}
+
 /*------------header--------------*/
 .hero-text {
   font-weight: 900;
@@ -222,7 +215,7 @@ body {
 .section-benefits-link {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: #382f64;
   display: flex;
   justify-content: center;
   align-items: center;
