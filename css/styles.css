@@ -98,6 +98,11 @@ body {
   color: #2196f3;
 }
 
+.header-contact-link:hover .header-contacts,
+.header-contact-link:focus .header-contacts {
+  fill: #2196f3;
+}
+
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -112,6 +117,11 @@ body {
 
 .header-contacts {
   fill: #757575;
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+  fill: #2196f3;
 }
 
 .header-contact-link.phone:hover,
@@ -259,6 +269,7 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 .team-list {
   display: flex;
@@ -336,11 +347,6 @@ body {
   margin-bottom: 56px;
 }
 
-.nav-button {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .nav-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -357,9 +363,23 @@ body {
   color: var(--color-dark);
   font-family: inherit;
 }
+.nav-button {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+}
 
 .nav-button {
   border: none;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .hero-list {
   display: block;
@@ -558,10 +578,19 @@ address {
 .hero-jpg-link {
   display: block;
 }
+
+.hero-jpg-link {
+  text-decoration: none;
+}
 .hero-jpg-link:hover,
 .hero-jpg-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.hero-jpg-link:hover .footer-soc-icon,
+.hero-jpg-link:focus .footer-soc-icon {
+  background-color: #2196f3;
 }
 
 .bg-dark {
